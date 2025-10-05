@@ -18,6 +18,22 @@
     <meta property="og:url" content="https://zatra.tv">
     <meta property="og:type" content="website">
 
+    <!-- Schema (Structured Data for SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Zatra TV",
+      "url": "https://zatra.tv",
+      "description": "Watch short films and original web series on Zatra TV – your destination for fresh stories, entertainment, and creative content anytime, anywhere.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zatra.tv/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,42 +41,59 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    
-<style>
-    :root {
-        --accent: #ff2d55;
-    }
+    <style>
+        :root {
+            --accent: #ff2d55;
+        }
 
-    .glass {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(6px);
-    }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(6px);
+        }
 
-    .brand {
-        letter-spacing: 2px;
-        font-weight: 800;
-    }
+        .brand {
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
 
-    @keyframes slide {
-        0%, 20% { transform: translateX(0); }
-        25%, 45% { transform: translateX(-100%); }
-        50%, 70% { transform: translateX(-200%); }
-        75%, 95% { transform: translateX(-300%); }
-        100% { transform: translateX(0); }
-    }
+        @keyframes slide {
 
-    .animate-slide {
-        animation: slide 12s linear infinite;
-        width: calc(52px * 4); /* total slides width */
-    }
+            0%,
+            20% {
+                transform: translateX(0);
+            }
 
-    .animate-slide img {
-        display: block;
-    }
-</style>
+            25%,
+            45% {
+                transform: translateX(-100%);
+            }
+
+            50%,
+            70% {
+                transform: translateX(-200%);
+            }
+
+            75%,
+            95% {
+                transform: translateX(-300%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animate-slide {
+            animation: slide 12s linear infinite;
+            width: calc(52px * 4);
+            /* total slides width */
+        }
+
+        .animate-slide img {
+            display: block;
+        }
+    </style>
 </head>
-
-
 
 <body class="antialiased">
 
@@ -80,58 +113,68 @@
         </button>
 
         <!-- HERO -->
-      <main class="flex-1 flex items-center justify-center bg-black text-white font-sans">
-    <section class="w-full">
-        <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <main class="flex-1 flex items-center justify-center bg-black text-white font-sans">
+            <section class="w-full">
+                <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            <div class="space-y-6">
-                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
-                    Stream Premium Content with Zatra
-                </h1>
-                <p class="text-gray-300 max-w-xl">
-                    Explore a curated library of award-winning series, exclusive movies, and insightful podcasts. Enjoy immersive storytelling on a sleek, cinematic interface.
-                </p>
-                <div class="flex flex-col space-y-4 mt-6">
-                    <div class="flex space-x-4">
-                        <a href="#">
-                            <img src="images/appstore.png" alt="App Store" class="h-16 w-40 object-contain rounded-[16px]">
-                        </a>
-                        <a href="#">
-                            <img src="images/playstore.png" alt="Play Store" class="h-16 w-40 object-contain rounded-[10px]">
-                        </a>
+                    <div class="space-y-6">
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                            Stream Premium Content with Zatra
+                        </h1>
+                        <p class="text-gray-300 max-w-xl">
+                            Explore a curated library of award-winning series, exclusive movies, and insightful
+                            podcasts. Enjoy immersive storytelling on a sleek, cinematic interface.
+                        </p>
+                        <div class="flex flex-col space-y-4 mt-6">
+                            <div class="flex space-x-4">
+                                <a href="#">
+                                    <img src="images/appstore.png" alt="App Store"
+                                        class="h-16 w-40 object-contain rounded-[16px]">
+                                </a>
+                                <a href="#">
+                                    <img src="images/playstore.png" alt="Play Store"
+                                        class="h-16 w-40 object-contain rounded-[10px]">
+                                </a>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#">
+                                    <img src="images/unnamed.png" alt="App Store" class="h-12 w-30 rounded-[50px]">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex space-x-4">
-                        <a href="#">
-                            <img src="images/unnamed.png" alt="App Store" class="h-12 w-30 rounded-[50px]">
-                        </a>
+
+                    <div class="flex flex-col md:flex-row items-center bg-pink-700 p-10 rounded-lg shadow-lg">
+
+                        <div class="flex-1 pr-0 md:pr-10 mb-6 md:mb-0 text-center md:text-left">
+                            <h1 class="text-4xl font-bold mb-4 text-white">Streamflix OTT Platform</h1>
+                            <p class="text-gray-200">
+                                Experience the best shows and movies right inside your screen. Browse, watch, and enjoy
+                                endless entertainment with smooth auto-sliding content previews.
+                            </p>
+                        </div>
+
+                        <div class="w-52 h-96 border-4 border-black rounded-3xl overflow-hidden relative flex-shrink-0">
+
+                            <div
+                                class="absolute top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full z-20">
+                            </div>
+
+                            <div class="flex animate-slide h-full absolute top-0 left-0">
+                                <img src="images/develop-live-streaming-website-ott-platform-live-tv-website-video-website.jpg"
+                                    class="w-52 h-full flex-shrink-0 object-cover" />
+                                <img src="images/Purple Illustration Couple Phone Wallpaper.png"
+                                    class="w-52 h-full flex-shrink-0 object-cover" />
+                                <img src="images/Brown and Orange Couple Illustration Quote Phone Wallpaper.png"
+                                    class="w-52 h-full flex-shrink-0 object-cover" />
+                                <img src="images/Purple Illustration Couple Phone Wallpaper.png"
+                                    class="w-52 h-full flex-shrink-0 object-cover" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center bg-pink-700 p-10 rounded-lg shadow-lg">
-
-                <div class="flex-1 pr-0 md:pr-10 mb-6 md:mb-0 text-center md:text-left">
-                    <h1 class="text-4xl font-bold mb-4 text-white">Streamflix OTT Platform</h1>
-                    <p class="text-gray-200">
-                        Experience the best shows and movies right inside your screen. Browse, watch, and enjoy endless entertainment with smooth auto-sliding content previews.
-                    </p>
-                </div>
-
-                <div class="w-52 h-96 border-4 border-black rounded-3xl overflow-hidden relative flex-shrink-0">
-
-                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-black rounded-full z-20"></div>
-
-                    <div class="flex animate-slide h-full absolute top-0 left-0">
-                        <img src="images/develop-live-streaming-website-ott-platform-live-tv-website-video-website.jpg" class="w-52 h-full flex-shrink-0 object-cover" />
-                        <img src="images/Purple Illustration Couple Phone Wallpaper.png" class="w-52 h-full flex-shrink-0 object-cover" />
-                        <img src="images/Brown and Orange Couple Illustration Quote Phone Wallpaper.png" class="w-52 h-full flex-shrink-0 object-cover" />
-                        <img src="images/Purple Illustration Couple Phone Wallpaper.png" class="w-52 h-full flex-shrink-0 object-cover" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+            </section>
+        </main>
 
 
 
